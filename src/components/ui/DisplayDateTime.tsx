@@ -20,7 +20,7 @@ function DisplayDateTime() {
       setTime(`${time} ${ampm}`);
     }
     getCurrentTime();
-    const interval = setInterval(getCurrentTime, 10000);
+    const interval = setInterval(getCurrentTime, 1000);
     return () => clearInterval(interval);
   }, []);
 
